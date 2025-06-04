@@ -1,0 +1,243 @@
+@import url('https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    background: #f4f4f9;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d1e7ff;
+}
+
+.home-page {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.home-page h1 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(to right, #10b981, #059669);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.products-section {
+    margin: 40px 0;
+}
+
+.products-section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-wrapper {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #e11d48;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.product-content {
+    padding: 16px;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    margin-bottom: 12px;
+}
+
+.original-price {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 0.95rem;
+    margin-left: 8px;
+}
+
+.discounted-price {
+    color: #059669;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.view-button, .cart-button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.view-button {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+    text-decoration: none;
+}
+
+.cart-button {
+    background: linear-gradient(to right, #10b981, #059669);
+    color: white;
+    border: none;
+}
+
+.view-button:hover, .cart-button:hover {
+    transform: translateY(-2px);
+}
+
+.no-products {
+    text-align: center;
+    color: #6b7280;
+    font-size: 1.2rem;
+}
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 8px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-title {
+        font-size: 1.1rem;
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+}
